@@ -92,6 +92,32 @@ h6 {
   color: var(--blackMainColor);
   line-height: 1;
   display: inline-block;
+  
+}
+@media (max-width: 576px) {
+  #header h1 a{
+    z-index: 99;
+    /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
+    color: white !important;
+    /* margin-bottom: 180px; */
+    text-align: start;
+  }
+  #header h2{
+    z-index: 99;
+    color: white !important;
+    margin-bottom: 250px;
+  }
+  body::after{
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
 }
 
 #header h2 {
