@@ -27,7 +27,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: var(--mainColor) url("../img/bg-galang.png") top right no-repeat;
+  background: var(--mainColor) url("../img/bg-galang2.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
