@@ -1,0 +1,68 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pokemon-nav ul {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Remove padding to maximize content width on small screens */
+    min-height: auto;
+  }
+
+  .map-zone {
+    position: static;
+    transform: none;
+    width: 100%; /* Maximize width for mobile */
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0; /* Remove padding to maximize content width */
+  }
+
+  .map-zone ul {
+    padding-left: 0; /* Remove padding-left for mobile */
+  }
+
+  /* Specific adjustments for project list on small screens */
+  .map-zone li {
+    margin-bottom: 8px; /* Adjusted margin for clearer separation on mobile */
+    line-height: 14px; /* Fixed line-height in pixels for mobile */
+    white-space: normal; /* Allow text to wrap naturally */
+    word-break: break-word; /* Break long words */
+  }
+
+  .map-zone li a {
+    font-size: 8px; /* Fixed font size in pixels for mobile */
+  }
+
+  .poke-title {
+    font-size: 1.2rem;
+  }
+
+  .tagline, .desc, .skills span {
+    font-size: 0.7rem;
+  }
+
+  .pokemon-footer {
+    /* margin-top: 20px; */ /* This will be handled by auto margin */
+  }
+
+  .map-zone.zone-skills > div {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center items when stacked */
+  }
+
+  .map-zone.zone-skills div > div {
+    margin-bottom: 20px; /* Add space between skill categories */
+  }
+}

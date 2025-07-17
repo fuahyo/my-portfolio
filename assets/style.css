@@ -1,0 +1,310 @@
+body, html {
+  margin: 0;
+  padding: 0; 
+  font-family: 'Press Start 2P', 'Segoe UI', sans-serif;
+  color: #222;
+  background: url('maphd.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  min-height: 90vh; /* Restore to 100vh for proper footer positioning and background visibility */
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PokéZone styles */
+.map-zone {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.88);
+  border: 3px solid #3b4cca;
+  border-radius: 12px;
+  padding: 10px 20px;
+  width: 250px;
+  font-size:0.7rem;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+} 
+
+.map-zone:hover {
+  transform: translateY(-8px);
+  box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+/* Positioning each map zone like locations on a Pokémon map */
+.zone-profile { top: 1%; left: 29%; text-align: center; transform: rotate(-2deg); }
+.zone-info { top: 70%; left: 2%; transform: rotate(2deg); border: 3px dashed #faae0b; }
+.zone-experience { top: 2%; left: 75%; transform: rotate(2deg); width: 300px;}
+.zone-education { top: 3%; right: 26%; transform: rotate(1deg); }
+.zone-projects { top: 2%; left: 2%; transform: rotate(-2deg); width: 300px; }
+.zone-skills { top: 65%; left: 40%; transform: rotate(-1deg); width: 700px; border: 3px dashed #cd1a1a;}
+
+.map-zone h2, .map-zone h3 { color:#3b4cca; margin-bottom:10px; text-align:center; }
+.map-zone p, .map-zone a{ font-size:8px; line-height: 1.4; flex-grow:1; } 
+.justify-space-between{
+  display: flex;  justify-content: space-between; 
+}
+
+.map-footer {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  color: #333;
+}
+
+        /* Common styling */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #ffcb05;
+  margin-bottom: 10px;
+}
+
+.poke-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: #e53935;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 12px;
+  color: #3b4cca;
+  margin: 5px 0;
+}
+
+.desc {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.skills span {
+  font-size: 6px;
+  display: inline-block;
+  margin: 2px;
+  padding: 2px 5px;
+  background: #ffcc80;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+/* Header Styles */
+.pokemon-header {
+  background: linear-gradient(to right, #e53935, #ffcb05);
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.poke-title-header {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-nav {
+  display: none; /* Hidden by default on larger screens */
+}
+
+.pokemon-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.pokemon-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pokemon-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer Styles */
+.pokemon-footer {
+  background: linear-gradient(to right, #3b4cca, #800080);
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  font-size: 8px; 
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Ensure footer spans full width */
+  /* position: relative; */
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .zone-projects, .zone-experience{
+    text-align: start !important;
+  }
+
+  .pokemon-nav {
+    display: block; /* Visible on smaller screens */
+  }
+
+  .pokemon-nav ul {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: auto;
+  }
+
+  .map-zone {
+    position: static;
+    transform: none; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .zone-profile, .zone-info, .zone-experience, .zone-education, .zone-projects, .zone-skills {
+    top: auto; left: auto; right: auto; bottom: auto; 
+  }
+
+  .poke-title {
+    font-size: 1.2rem;
+  }
+
+  .tagline, .desc, .skills span {
+    font-size: 0.7rem;
+  }
+
+  .pokemon-footer {
+    /* margin-top: 20px; */ /* This will be handled by auto margin */
+  }
+
+  .justify-space-between {
+    display: block;
+  }
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4);  
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 3px solid #3b4cca;
+  border-radius: 12px;
+  width: 80%; /* Could be more responsive */
+  max-width: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  position: relative;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.modal-content li{
+  font-size: 12px; 
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #3b4cca;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #ffcb05;
+  color: #333;
+}
+
+.zone-projects p {
+  /* margin-bottom: 5px;   */
+}
