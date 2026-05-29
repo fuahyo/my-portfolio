@@ -1,337 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Galang - Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css" /> 
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galang Dwi Juniar — Web, Mobile &amp; Data Scraping</title>
+  <meta name="description" content="Portfolio of Galang Dwi Juniar — web &amp; mobile developer and data scraper based in Jakarta. Full-stack, Flutter, Laravel, Next.js, and large-scale scraping." />
+  <meta name="author" content="Galang Dwi Juniar" />
+  <link rel="canonical" href="https://fuahyo.github.io/my-portfolio/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Galang Dwi Juniar — Web, Mobile &amp; Data Scraping" />
+  <meta property="og:description" content="Web &amp; mobile developer and data scraper. Full-stack, Flutter, scraping at scale." />
+  <meta property="og:url" content="https://fuahyo.github.io/my-portfolio/" />
+  <meta property="og:image" content="https://fuahyo.github.io/my-portfolio/assets/img/glg.jpeg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Galang Dwi Juniar — Portfolio" />
+  <meta name="twitter:description" content="Web &amp; mobile developer and data scraper based in Jakarta, Indonesia." />
+  <meta name="twitter:image" content="https://fuahyo.github.io/my-portfolio/assets/img/glg.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script type="application/ld+json" id="json-ld"></script>
 </head>
 <body>
-  <header class="pokemon-header">
-    <div class="header-content">
-      <h1 class="poke-title-header">Galang's Portfolio</h1>
-      <nav class="pokemon-nav">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Galang <span>D. J.</span></a>
+
+      <nav class="nav-desktop" aria-label="Primary">
         <ul>
           <li><a href="#profile">About</a></li>
-          <li><a href="#quests">Resume</a></li>
+          <li><a href="#quests">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-pressed="true" aria-label="Switch to light mode">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-mobile" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
-  <main>
-  <div class="map-container">
 
-    <!-- Zone: Trainer's Profile -->
-    <section class="map-zone zone-profile" id="profile">
-      <h2>👾 About Me</h2>
-      <img src="assets/img/glg.jpeg" alt="Trainer Galang D. Juniar" class="avatar" />
-      <h1 class="poke-title">Galang Dwi J</h1>
-      <p class="tagline">🎮 Web-Mobile Developer & Data Scraper</p>
-      <p class="desc">“Passionate developer with proven experience in full-stack web development, front-end mobile apps development, and web scraping. Eager to contribute innovative and scalable solutions to your projects.”</p>
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile">
+    <ul>
+      <li><a href="#profile">About</a></li>
+      <li><a href="#quests">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    </section>
-
-    <!-- Zone: Quest Log -->
-    <section class="map-zone zone-experience" id="quests">
-      <h2>⚙️ Professional Experience</h2>
-      <ul>  </ul>
-        <p><a href="#" onclick="showModal('datahen-modal'); return false;"><strong>Jr. Data Scraper</strong><br> – Datahen Canada Inc. (Remote Job) <br>(May 2024–Present)</a></p>
-        <p><a href="#" onclick="showModal('consulting-service-modal'); return false;"><strong>Aplication Developer</strong><br> – PT. Consulting Service Indonesia <br>(Jan 2023 - Present)</a></p>
-        <p><a href="#" onclick="showModal('co-teacher-modal'); return false;"><strong>Co-Teacher (Mobile App Dev - Flutter)</strong><br> – PT. Ako Media Asia <br>(January 2023 – May 2023)</a></p>
-        <p><a href="#" onclick="showModal('menarini-modal'); return false;"><strong>Calibration and Maintenance Staff</strong><br> – PT. Menarini Indria Laboratories <br>(April 2020 – July 2023)</a></p>
-      </ul>
-    </section>
-
-    <!-- Zone: Academy of Vellora -->
-    <section class="map-zone zone-education">
-      <h2>📜 Education</h2>
-      <p><strong>BINUS UNIVERSITY</strong><br> Bachelor of Computer Science<br>(2020–2023)</p>
-      <p><strong>Academy of Metrology and Instrumentation</strong><br> Diploma in Metrology and Instrumentation<br>(2016–2019)</p>
-    </section>
-
-    <!-- Zone: Academy of Vellora -->
-    <section class="map-zone zone-projects" id="portfolio">
-      <h3>🧩 Projects (Portfolio)</h3>
-      <ul>
-        <li><a href="#" onclick="showModal('multi-server-scraper-modal'); return false;">Multi-Server Scraper Management System (Ongoing)</a></li>
-        <li><a href="#" onclick="showModal('spa-scraper-qa-tool-modal'); return false;">SPA Scraper QA Tool (Streamlit Python)</a></li>
-        <li><a href="#" onclick="showModal('wedding-invitation-cms-modal'); return false;">Web Based Wedding Invitation & Content Management System</a></li>
-        <li><a href="#" onclick="showModal('mobile-apps-modal'); return false;">Mobile Apps: Career Center, Trash Collection & Blood Donor</a></li>
-        <li><a href="#" onclick="showModal('monitoring-system-modal'); return false;">Web Based Monitoring System Application</a></li>
-        <li><a href="#" onclick="showModal('nvite-me-modal'); return false;">Nvite Me - Digital Invitation (Web)</a></li>
-        <li><a href="#" onclick="showModal('career-center-mobile-modal'); return false;">Career Center Mobile App (Mobile)</a></li>
-        <li><a href="#" onclick="showModal('syadida-car-rent-modal'); return false;">Syadida Car Rent (Web)</a></li>
-        <li><a href="#" onclick="showModal('blood-donor-mobile-modal'); return false;">Blood's Donor Mobile App (Mobile)</a></li>
-        <li><a href="#" onclick="showModal('angular-component-modal'); return false;">Angular Component List & Detail (Web)</a></li>
-        <li><a href="#" onclick="showModal('waste-bank-mobile-modal'); return false;">Waste Bank Mobile App (Mobile)</a></li>
-        <li><a href="#" onclick="showModal('web-dev-own-framework-modal'); return false;">Web Development with Own Framework (Web)</a></li>
-        <li><a href="#" onclick="showModal('wedding-invitation-modal'); return false;">Wedding Invitation (Web)</a></li>
-        <li><a href="#" onclick="showModal('wordpress-nexdev-modal'); return false;">Wordpress NexDev Studio (Web)</a></li>
-      </ul>
-      <!-- Removed the 'Details' button as individual project links will trigger modals -->
-    </section>
-
-    <!-- Zone: Skills -->
-    <section class="map-zone zone-skills" id="skills">
-      <h2>⚡ Skill</h2>
-      <div class="justify-space-between">
-        <div>
-          <h3>Programming Languages:</h3>
-          <div class="skills">
-            <span>HTML</span><span>CSS</span><span>Javascript</span><span>PHP</span><span>SQL</span><span>Dart</span><span>Ruby</span><span>Go</span><span>C</span><span>Typescript</span><span>Python</span>
-          </div>
-        </div> 
-        <div> 
-          <h3>Framework:</h3>
-          <div class="skills">
-            <span>Flutter</span><span>Laravel</span><span>Next.Js</span><span>Express.js</span><span>Java springbooth</span><span>Built own Framework</span>
-          </div>
-        </div>
-        <div>
-          <h3>Web Dev Tools:</h3>
-          <div class="skills">
-            <span>VsCode</span><span>Git</span><span>JIRA</span><span>SQL Server</span><span>xCode</span><span>cursor</span><span>Android Studio</span><span>Firebase</span>
-          </div>
-        </div>
-        <div>
-          <h3>Area of Interest:</h3>
-          <div class="skills">
-            <span>Web design and development</span><span>Mobile application development</span><span>Data scraping</span>
-          </div>
-        </div>  
+  <main id="main">
+    <section class="hero container reveal" aria-labelledby="hero-heading">
+      <p class="hero-badge">Available for projects</p>
+      <h1 id="hero-heading">Galang D. Juniar</h1>
+      <p class="hero-role">Web &amp; Mobile Developer · Data Scraper</p>
+      <p class="hero-tagline">
+        Passionate developer with proven experience in full-stack web development, mobile apps, and web scraping. Eager to deliver innovative, scalable solutions.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#portfolio">View projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
       </div>
-    </section> 
-
-    
-
-    <!-- Zone: Trainer's Guild -->
-    <section class="map-zone zone-info" id="contact"> 
-      <h2>📬 Contact</h2>
-      <p><strong>Github:</strong>www.github.com/fuahyo</p>
-      <p><strong>Email:</strong>galangdwij@gmail.com</p> 
-      <p><strong>Location:</strong>Jakarta, Indonesia</p>
     </section>
-  </div>
+
+    <section class="section container" id="profile" aria-labelledby="about-heading">
+      <header class="section-header reveal">
+        <h2 id="about-heading">About</h2>
+        <p>Who I am and what I build</p>
+      </header>
+      <div class="glass about-grid reveal">
+        <img
+          class="about-avatar"
+          src="assets/img/glg.jpeg"
+          alt="Portrait of Galang Dwi Juniar"
+          width="160"
+          height="160"
+          loading="eager"
+          decoding="async"
+        />
+        <div class="about-text">
+          <p>
+            I am a developer based in Jakarta, Indonesia, focused on building reliable web and mobile products and high-volume data pipelines.
+          </p>
+          <p>
+            My work spans Laravel and Next.js backends, Flutter mobile apps, and production web scrapers deployed at scale — including distributed job management and QA tooling for single-page applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="quests" aria-labelledby="experience-heading">
+      <header class="section-header reveal">
+        <h2 id="experience-heading">Experience</h2>
+        <p>Professional roles and impact</p>
+      </header>
+      <div class="timeline" id="experience-list"></div>
+    </section>
+
+    <section class="section container" aria-labelledby="education-heading">
+      <header class="section-header reveal">
+        <h2 id="education-heading">Education</h2>
+      </header>
+      <div class="edu-grid" id="education-grid"></div>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-heading">
+      <header class="section-header reveal">
+        <h2 id="skills-heading">Skills</h2>
+        <p>Languages, frameworks, and tools I work with</p>
+      </header>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <section class="section container" id="portfolio" aria-labelledby="projects-heading">
+      <header class="section-header reveal">
+        <h2 id="projects-heading">Projects</h2>
+        <p>Selected work across web, mobile, and scraping</p>
+      </header>
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects by type">
+        <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+        <button type="button" class="filter-btn" data-filter="scraper" aria-pressed="false">Scraper</button>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <section class="section container" id="contact" aria-labelledby="contact-heading">
+      <header class="section-header reveal">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Let&apos;s connect</p>
+      </header>
+      <div class="glass contact-card reveal">
+        <p>Open to collaborations, freelance work, and full-time opportunities.</p>
+        <ul class="contact-list">
+          <li>
+            <strong>GitHub</strong><br />
+            <a href="https://github.com/fuahyo" target="_blank" rel="noopener noreferrer">github.com/fuahyo</a>
+          </li>
+          <li>
+            <strong>Email</strong><br />
+            <a href="mailto:galangdwij@gmail.com">galangdwij@gmail.com</a>
+          </li>
+          <li>
+            <strong>Location</strong><br />
+            Jakarta, Indonesia
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
-  <footer class="pokemon-footer">
-    <p>🗺️ Let’s catch up if you need more insight into this journey! <br> &copy; 2025 PokéMap Portfolio. All rights reserved.</p>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Galang D. Juniar. All rights reserved.</p>
+    </div>
   </footer>
 
-  <!-- Modals for Professional Experience -->
-  <div id="consulting-service-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('consulting-service-modal')">&times;</span>
-      <h4>PT. Consulting Service Indonesia – Aplication Developer</h4>
-      <h5>(Jan 2023 - May 2023)</h5>
-      <ul>
-        <li>Develop application according to the analysis and design documents</li>
-        <li>Perform internal test and guide key users to perform UAT</li>
-        <li>Maintain business communication with key users & escalate issues to Application Manager and/or Designer</li>
-      </ul>
-    </div>
-  </div>
-
-  <div id="datahen-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('datahen-modal')">&times;</span>
-      <h4>Jr. Data Scraper – Datahen Canada Inc. (Remote Job)</h4>
-      <h5>(May 2024–Present)</h5>
-      <ul>
-        <li>Developed web scraping solutions using Git for version control and Scrape API for deployment. Scaled scrapers to millions of pages without bad-neighbor effects.</li>
-        <li>Utilized Ruby and Python programming languages for web scraping, and designed customizable scraper job containers to store parsed outputs and deploy code.</li>
-        <li>Implemented monitoring features and adhered to coding conventions for collaboration and easy troubleshooting.</li>
-      </ul>
-    </div>
-  </div> 
-
-  <div id="co-teacher-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('co-teacher-modal')">&times;</span>
-      <h4>Co-Teacher (Mobile App Dev - Flutter) – PT. Ako Media Asia</h4>
-      <h5>(January 2023–May 2023)</h5>
-      <ul>
-        <li>Assist in providing tutorials to students regarding mobile apps development using flutter.</li>
-        <li>Help solve problems against the flutter learning process.</li>
-        <li>Assisting in the final project of the students on the front end, both UI slicing and API integration.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div id="menarini-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('menarini-modal')">&times;</span>
-      <h4>Calibration and Maintenance Staff – PT. Menarini Indria Laboratories</h4>
-      <h5>(April 2020 – July 2023)</h5>
-      <ul>
-        <li>Calibrate measuring instruments in pharmaceutical factories.</li>
-        <li>Manage measurement data and reporting calibration results also scheduling the calibration.</li>
-        <li>Maintenance the instrument Laboratory.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Modals for Projects -->
-  <!-- Removing the single all-projects-modal and reintroducing individual project modals -->
-  <div id="wedding-invitation-cms-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('wedding-invitation-cms-modal')">&times;</span>
-      <h4>Web Based Wedding Invitation & Content Management System</h4>
-      <img src="assets/img/portfolio/portfolio10.PNG" class="modal-image" alt="Wedding Invitation CMS">
-      <p>Wedding Invitation Application based on website with the content management system<br>Technology: Frontend using Next.js and backend using java</p>
-      <p><a href="https://fuahyo.github.io/g-wedding" target="_blank" class="project-link">View Live Project</a></p>
-    </div>
-  </div>
-
-  <div id="mobile-apps-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('mobile-apps-modal')">&times;</span>
-      <h4>Mobile Apps: Career Center, Trash Collection & Blood Donor</h4>
-      <img src="assets/img/portfolio/portofolio2.png" class="modal-image" alt="Career Center Mobile App">
-      <p>Social project for several mobile application: High School Career Center Application, Trash Collection Application for specific region in Belitung and Blood Donor application for public health center in West Kalimantan<br>Technology: Frontend using Flutter</p>
-      <p><a href="portfolio-details-CC.html" target="_blank" class="project-link">View Details</a></p>
-    </div>
-  </div>
-
-  <div id="monitoring-system-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('monitoring-system-modal')">&times;</span>
-      <h4>Web Based Monitoring System Application</h4>
-      <img src="assets/img/portfolio/portofolio6.png" class="modal-image" alt="Web Based Monitoring System Application">
-      <p>System Monitoring for Corrective Action and Preventive Action (CAPA) resulting from audit actions<br>Technology: Full stack development using Laravel</p>
-      <p><a href="portfolio-details-NG.html" target="_blank" class="project-link">View Details</a></p>
-    </div>
-  </div>
-
-  <div id="nvite-me-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('nvite-me-modal')">&times;</span>
-      <h4>Nvite Me - Digital Invitation (Web)</h4>
-      <img src="assets/img/portfolio/nviteme.png" class="modal-image" alt="Nvite Me - Digital Invitation">
-      <p>Details for Nvite Me - Digital Invitation.</p>
-      <p><a href="https://www.invite-me.click/" target="_blank" class="project-link">View Live Project</a></p>
-    </div>
-  </div>
-
-  <div id="career-center-mobile-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('career-center-mobile-modal')">&times;</span>
-      <h4>Career Center Mobile App (Mobile)</h4>
-      <img src="assets/img/portfolio/portofolio2.png" class="modal-image" alt="Career Center Mobile App">
-      <p>Details for Career Center Mobile App.</p>
-      <p><a href="portfolio-details-CC.html" target="_blank" class="project-link">View Details</a></p>
-    </div>
-  </div>
-
-  <div id="syadida-car-rent-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('syadida-car-rent-modal')">&times;</span>
-      <h4>Syadida Car Rent (Web)</h4>
-      <img src="assets/img/portfolio/portofolio3.PNG" class="modal-image" alt="Syadida Car Rent">
-      <p>Details for Syadida Car Rent.</p>
-      <p><a href="https://next-js-car-rent-syadida.vercel.app/" target="_blank" class="project-link">View Live Project</a></p>
-    </div>
-  </div>
-
-  <div id="blood-donor-mobile-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('blood-donor-mobile-modal')">&times;</span>
-      <h4>Blood's Donor Mobile App (Mobile)</h4>
-      <img src="assets/img/portfolio/portofolio1.png" class="modal-image" alt="Blood's Donor Mobile App">
-      <p>Details for Blood's Donor Mobile App.</p>
-      <p><a href="portfolio-details-DD.html" target="_blank" class="project-link">View Details</a></p>
-    </div>
-  </div>
-
-  <div id="angular-component-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('angular-component-modal')">&times;</span>
-      <h4>Angular Component List & Detail (Web)</h4>
-      <img src="assets/img/portfolio/portofolio4.png" class="modal-image" alt="Angular Component List & Detail">
-      <p>Details for Angular Component List & Detail.</p>
-      <p><a href="https://angular-question-list-web-component.vercel.app/" target="_blank" class="project-link">View Live Project</a></p>
-    </div>
-  </div>
-
-  <div id="waste-bank-mobile-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('waste-bank-mobile-modal')">&times;</span>
-      <h4>Waste Bank Mobile App (Mobile)</h4>
-      <img src="assets/img/portfolio/portofolio5.png" class="modal-image" alt="Waste Bank Mobile App">
-      <p>Details for Waste Bank Mobile App.</p>
-      <p><a href="portfolio-details-BS.html" target="_blank" class="project-link">View Details</a></p>
-    </div>
-  </div>
-
-  <div id="web-dev-own-framework-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('web-dev-own-framework-modal')">&times;</span>
-      <h4>Web Development with Own Framework (Web)</h4>
-      <img src="assets/img/portfolio/portofolio7.png" class="modal-image" alt="Web Development with Own Framework">
-      <p>Details for Web Development with Own Framework.</p>
-      <p><a href="portfolio-details-NG.html" target="_blank" class="project-link">View Details</a></p>
-    </div>
-  </div>
-
-  <div id="wedding-invitation-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('wedding-invitation-modal')">&times;</span>
-      <h4>Wedding Invitation (Web)</h4>
-      <img src="assets/img/portfolio/portofolio8.png" class="modal-image" alt="Wedding Invitation">
-      <p>Details for Wedding Invitation.</p>
-      <p><a href="https://fuahyo.github.io/g-wedding" target="_blank" class="project-link">View Live Project</a></p>
-    </div>
-  </div>
-
-  <div id="wordpress-nexdev-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('wordpress-nexdev-modal')">&times;</span>
-      <h4>Wordpress NexDev Studio (Web)</h4>
-      <img src="assets/img/portfolio/portfolio9.PNG" class="modal-image" alt="Wordpress NexDev Studio">
-      <p>Details for Wordpress NexDev Studio.</p>
-      <p><a href="https://nexdev.studio/" target="_blank" class="project-link">View Live Project</a></p>
-    </div>
-  </div>
-
-  <!-- New Project Modals -->
-  <div id="multi-server-scraper-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('multi-server-scraper-modal')">&times;</span>
-      <h4>Multi-Server Scraper Management System (Ongoing)</h4>
-      <img src="assets/img/MCP.png" class="modal-image" alt="Multi-Server Scraper Management System">
-      <p>Designing and implementing a system to manage distributed scraping jobs using in-house technology, focusing on scalability, monitoring, and modular deployment of scraper containers.</p>
-      <p><a href="#" target="_blank" class="project-link">View Project (Private)</a></p>
-    </div>
-  </div>
-
-  <div id="spa-scraper-qa-tool-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="hideModal('spa-scraper-qa-tool-modal')">&times;</span>
-      <h4>SPA Scraper QA Tool (Streamlit Python)</h4>
-      <img src="assets/img/QA-tool.png" class="modal-image" alt="SPA Scraper QA Tool">
-      <p>Developed a UI-based QA system for scraper output validation on JavaScript-heavy single-page applications, integrating it with automated testing workflows.</p>
-      <p><a href="#" target="_blank" class="project-link">View Project (Private)</a></p>
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__backdrop" data-close tabindex="-1" aria-hidden="true"></div>
+    <div class="modal__panel" role="document">
+      <button type="button" class="icon-btn modal__close" id="modal-close" aria-label="Close dialog">&times;</button>
+      <h2 class="modal__title" id="modal-title"></h2>
+      <p class="modal__meta" id="modal-meta"></p>
+      <div class="modal__body" id="modal-body"></div>
+      <div class="modal__media" id="modal-media" hidden></div>
+      <div class="modal__links" id="modal-links" hidden></div>
     </div>
   </div>
 
   <script>
-    function showModal(id) {
-      document.getElementById(id).style.display = "block";
-    }
-
-    function hideModal(id) {
-      document.getElementById(id).style.display = "none";
-    }
-
-    // Close modals when clicking outside
-    window.onclick = function(event) {
-      if (event.target.classList.contains('modal')) {
-        event.target.style.display = "none";
-      }
-    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
   </script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
