@@ -158,7 +158,7 @@ export const PROJECTS = [
     title: 'PIMS',
     type: 'web',
     summary:
-      'Procurement & Inventory Management System for efficiently managing purchasing, stock, and suppliers.',
+      'Procurement & Inventory Management System for efficiently managing purchasing, stock, and suppliers. (for internal use)',
     description:
       'An integrated system designed to streamline end-to-end procurement and inventory processes. Features include purchase requests, purchase orders, supplier management, real-time stock tracking, and comprehensive inventory reporting to support operational efficiency.',
     media: {
@@ -173,7 +173,7 @@ export const PROJECTS = [
     id: 'multi-server-scraper',
     title: 'Multi-Server & Agent scraper',
     type: 'scraper',
-    summary: 'Distributed scraping job management.',
+    summary: 'Distributed scraping job management. (for internal use)',
     description:
       'Designing and implementing a system to manage distributed scraping jobs using in-house technology, focusing on scalability, monitoring, and modular deployment of scraper containers.',
     media: {
