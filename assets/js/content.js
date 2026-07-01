@@ -37,8 +37,7 @@ export const SKILLS = [
       'SQL',
       'Dart',
       'Ruby',
-      'Go',
-      'C',
+      'Go', 
       'TypeScript',
       'Python',
     ],
@@ -52,6 +51,7 @@ export const SKILLS = [
       'Express.js',
       'Java Spring Boot',
       'Custom framework',
+      'Openclaw/Hermes Agent',
     ],
   },
   {
@@ -73,11 +73,23 @@ export const SKILLS = [
       'Web design & development',
       'Mobile application development',
       'Data scraping',
+      'Agentic AI',
     ],
   },
 ];
 
 export const EXPERIENCE = [
+  {
+    id: 'kpmg',
+    role: 'Fullstack Application Developer',
+    company: 'KPMG Indonesia',
+    meta: 'Jul 2026 - Present',
+    highlights: [
+      'Developed applications according to analysis and design documents.',
+      'Performed internal testing and guided key users through UAT.',
+      'Maintained communication with key users and escalated issues to Application Manager and/or Designer.',
+    ],
+  },
   {
     id: 'datahen',
     role: 'Jr. Data Scraper',
@@ -93,7 +105,7 @@ export const EXPERIENCE = [
     id: 'consulting-service',
     role: 'Application Developer',
     company: 'PT. Consulting Service Indonesia',
-    meta: 'Jul 2023 - July 2026',
+    meta: 'Jul 2023 - June 2026',
     highlights: [
       'Developed applications according to analysis and design documents.',
       'Performed internal testing and guided key users through UAT.',
@@ -140,6 +152,22 @@ export const PROJECTS = [
     },
     links: [],
     featured: true,
+  }, 
+  {
+    id: 'pims',
+    title: 'PIMS',
+    type: 'web',
+    summary:
+      'Procurement & Inventory Management System for efficiently managing purchasing, stock, and suppliers.',
+    description:
+      'An integrated system designed to streamline end-to-end procurement and inventory processes. Features include purchase requests, purchase orders, supplier management, real-time stock tracking, and comprehensive inventory reporting to support operational efficiency.',
+    media: {
+      type: '',
+      src: '',
+      alt: 'PIMS demo walkthrough',
+    },
+    links: [],
+    featured: true,
   },
   {
     id: 'multi-server-scraper',
@@ -168,7 +196,23 @@ export const PROJECTS = [
       alt: 'SPA Scraper QA Tool',
     },
     links: [],
-  },
+  }, 
+  {
+    id: 'tax-tools',
+    title: 'Tax Tools',
+    type: 'web',
+    summary:
+      'A suite of tax utilities for calculation, reporting, and validation.',
+    description:
+      'A web-based application providing essential tools for tax-related tasks, including income tax (PPh) and VAT (PPN) calculations, data validation, and tax scenario simulations. Built to simplify workflows for finance and tax professionals.',
+    media: {
+      type: '',
+      src: '',
+      alt: 'Tax Tools demo walkthrough',
+    },
+    links: [],
+    featured: false,
+  }, 
   {
     id: 'wedding-invitation-cms',
     title: 'Wedding Invitation & CMS',
