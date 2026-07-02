@@ -90,17 +90,17 @@ export const EXPERIENCE = [
       'Maintained communication with key users and escalated issues to Application Manager and/or Designer.',
     ],
   },
-  {
-    id: 'datahen',
-    role: 'Jr. Data Scraper',
-    company: 'Datahen Canada Inc.',
-    meta: 'Remote · May 2024 – Present',
-    highlights: [
-      'Developed web scraping solutions using Git and Scrape API; scaled scrapers to millions of pages without bad-neighbor effects.',
-      'Used Ruby and Python with customizable scraper job containers for parsed outputs and deployment.',
-      'Implemented monitoring features and coding conventions for collaboration and troubleshooting.',
-    ],
-  },
+  // {
+  //   id: 'datahen',
+  //   role: 'Jr. Data Scraper',
+  //   company: 'Datahen Canada Inc.',
+  //   meta: 'Remote · May 2024 – Present',
+  //   highlights: [
+  //     'Developed web scraping solutions using Git and Scrape API; scaled scrapers to millions of pages without bad-neighbor effects.',
+  //     'Used Ruby and Python with customizable scraper job containers for parsed outputs and deployment.',
+  //     'Implemented monitoring features and coding conventions for collaboration and troubleshooting.',
+  //   ],
+  // },
   {
     id: 'consulting-service',
     role: 'Application Developer',
